@@ -155,6 +155,9 @@ st.markdown("<div style='position: fixed; bottom: 20px; width: 100%; padding: 10
 # ✅ `user_input` をリセット（最初の2回でリセットが適切に働くように）
 if "user_input" not in st.session_state:
     st.session_state["user_input"] = ""
+# ✅ 送信状態フラグを管理（初期化）
+if "sending" not in st.session_state:
+    st.session_state.sending = False
 
 # ✅ 入力エリアを画面下部に配置（送信ボタンを右端に）
 with st.container():
@@ -170,10 +173,18 @@ with st.container():
         )
 
     with col2:
-        send_button = st.button("送る", use_container_width=True)
+        send_button = st.button(
+            "送信中…" if st.session_state.sending else "送る",
+            use_container_width=True,
+            disabled=st.session_state.sending  # ✅ 送信中ならボタンを無効化
+        )
 
 # ✅ 送信ボタンが押されたとき
 if send_button and user_input:
+    # ✅ 送信中状態に変更
+    st.session_state.sending = True
+    st.rerun()  # ✅ ボタンの表示をすぐに更新する
+
     # ✅ ユーザーの発言を履歴に追加
     st.session_state.chat_history.append({"role": "user", "parts": [{"text": user_input}]})
 
@@ -196,6 +207,9 @@ if send_button and user_input:
 
     # ✅ `user_input` をリセット（session_state から削除）
     st.session_state.pop("user_input", None)
+
+    # ✅ 送信完了後にボタンを再有効化
+    st.session_state.sending = False
 
     # ✅ ページをリフレッシュ
     st.rerun()
