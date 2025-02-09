@@ -34,7 +34,7 @@ st.set_page_config(page_title="てらすくん AI チャット", layout="wide")
 st.markdown(
     f"""
     <div style='text-align: center; margin-bottom: 20px;'>
-        <img src="https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-3.png" 
+        <img src="https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-5.png" 
              width="100" style="border-radius: 50%;">
         <h1 style="color: #ffffff; font-size: 24px; margin-top: 10px;">てらすくんチャット</h1>
         <p style="color: #ffffff; font-size: 16px;">あおば・コミュニティテラスの「てらすくん」とお話ししてみよう！</p>
