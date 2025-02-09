@@ -37,7 +37,7 @@ st.markdown(
         <img src="https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-5.png" 
              width="100" style="border-radius: 50%;">
         <h1 style="color: #ffffff; font-size: 24px; margin-top: 10px;">てらすくんチャット</h1>
-        <p style="color: #ffffff; font-size: 16px;">あおば・コミュニティテラスの「てらすくん」とお話ししてみよう！</p>
+        <p style="color: #ffffff; font-size: 12px;">あおば・コミュニティテラスの「てらすくん」とお話ししてみよう！※たまに間違えることもあるよ</p>
     </div>
     """,
     unsafe_allow_html=True
