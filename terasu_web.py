@@ -33,11 +33,11 @@ st.set_page_config(page_title="てらすくん AI チャット", layout="wide")
 # ✅ てらすくんのアイコン・タイトル・説明文を画面上部に表示
 st.markdown(
     f"""
-    <div style='text-align: center; margin-bottom: 20px;'>
-        <img src="https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-2.png" 
+    <div style='text-align: center; margin-bottom: 10px;'>
+        <img src="https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-3.png" 
              width="100" style="border-radius: 50%;">
-        <h1 style="color: #5352eb; font-size: 24px; margin-top: 10px;">てらすくん AIチャット</h1>
-        <p style="color: #5352eb; font-size: 16px;">あおば・コミュニティテラスの「てらすくん」とお話ししてみよう！</p>
+        <h1 style="color: #ffffff; font-size: 24px; margin-top: 10px;">てらすくんチャット</h1>
+        <p style="color: #ffffff; font-size: 16px;">あおば・コミュニティテラスの「てらすくん」とお話ししてみよう！</p>
     </div>
     """,
     unsafe_allow_html=True
@@ -57,7 +57,7 @@ st.markdown(f"""
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
 
         .stApp {{
-            background-image: url("https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-1.png");
+            background-image: url("https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-4.png");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -101,8 +101,8 @@ st.markdown(f"""
 
         /* ✅ ユーザーメッセージ（アニメーション付き & フォント適用） */
         .user-message {{
-            background-color: #5352eb;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #584cd6;
             max-width: 60%;
             padding: 12px;
             margin: 5px;
@@ -117,8 +117,8 @@ st.markdown(f"""
 
         /* ✅ てらすくんのメッセージ（アニメーション付き & フォント適用） */
         .bot-message {{
-            background-color: #FFFFFF;
-            color: #5352eb;
+            background-color: #7b71ef;
+            color: #ffffff;
             max-width: 80%;
             padding: 12px;
             margin: 5px;
