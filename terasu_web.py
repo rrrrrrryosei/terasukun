@@ -54,11 +54,14 @@ if "user_input" not in st.session_state:
 # ✅ CSS でデザインを改善（アニメーション追加）
 st.markdown(f"""
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
         .stApp {{
             background-image: url("https://images.unsplash.com/photo-1614853316476-de00d14cb1fc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            font-family: 'Noto Sans JP', sans-serif !important;  /* ✅ フォント適用 */
         }}
 
         .chat-container {{ 
@@ -96,7 +99,7 @@ st.markdown(f"""
             }}
         }}
 
-        /* ✅ ユーザーメッセージ（アニメーション付き） */
+        /* ✅ ユーザーメッセージ（アニメーション付き & フォント適用） */
         .user-message {{
             background-color: #c7d8e3;
             color: #545454;
@@ -109,9 +112,10 @@ st.markdown(f"""
             text-align: left;
             opacity: 0;
             animation: fadeIn 0.5s ease-in-out forwards;
+            font-family: 'Noto Sans JP', sans-serif !important;
         }}
 
-        /* ✅ てらすくんのメッセージ（アニメーション付き） */
+        /* ✅ てらすくんのメッセージ（アニメーション付き & フォント適用） */
         .bot-message {{
             background-color: #FFFFFF;
             color: #322e94;
@@ -125,6 +129,12 @@ st.markdown(f"""
             margin-left: 10px;
             opacity: 0;
             animation: fadeIn 0.5s ease-in-out forwards;
+            font-family: 'Noto Sans JP', sans-serif !important;
+        }}
+
+        /* ✅ タイトル・説明文のフォントも適用 */
+        h1, h2, h3, h4, h5, h6, p {{
+            font-family: 'Noto Sans JP', sans-serif !important;
         }}
     </style>
 """, unsafe_allow_html=True)
