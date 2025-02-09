@@ -77,9 +77,11 @@ st.markdown(f"""
             display: none !important;
         }}
 
+
         /* ✅ フッター（Made with Streamlit）を非表示 */
         footer {{
             visibility: hidden;
+            display: none !important;
         }}
 
         /* ✅ 画面下部の余白・固定エリアを削除 */
