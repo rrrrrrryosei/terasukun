@@ -34,7 +34,7 @@ st.set_page_config(page_title="てらすくん AI チャット", layout="wide")
 st.markdown(
     f"""
     <div style='text-align: center; margin-bottom: 20px;'>
-        <img src="https://aobact.com/wp-content/uploads/2024/10/%E3%83%86%E3%83%A9%E3%82%B9%E3%81%8F%E3%82%93.png" 
+        <img src="https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-2.png" 
              width="100" style="border-radius: 50%;">
         <h1 style="color: #FFFFFF; font-size: 24px; margin-top: 10px;">てらすくん AIチャット</h1>
         <p style="color: #FFFFFF; font-size: 16px;">あおば・コミュニティテラスの「てらすくん」とお話ししてみよう！</p>
@@ -57,7 +57,7 @@ st.markdown(f"""
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
 
         .stApp {{
-            background-image: url("https://images.unsplash.com/photo-1614853316476-de00d14cb1fc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-image: url("https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-1.png");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
