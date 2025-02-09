@@ -171,6 +171,7 @@ with st.container():
             "👤 メッセージを入力:",
             key="user_input",
             value="",
+            placeholder="青葉区のこと教えて！", 
             help="ここに入力して送信",
             label_visibility="collapsed"
         )
