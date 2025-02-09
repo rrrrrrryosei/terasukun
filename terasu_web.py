@@ -180,10 +180,9 @@ with st.container():
         )
 
 # ✅ 送信ボタンが押されたとき
-if send_button and user_input:
+if send_button and user_input and not st.session_state.sending:
     # ✅ 送信中状態に変更
     st.session_state.sending = True
-    st.rerun()  # ✅ ボタンの表示をすぐに更新する
 
     # ✅ ユーザーの発言を履歴に追加
     st.session_state.chat_history.append({"role": "user", "parts": [{"text": user_input}]})
