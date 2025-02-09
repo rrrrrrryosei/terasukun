@@ -1,6 +1,6 @@
 [theme]
-primaryColor = "#333dff"
-backgroundColor = "#0E1117"
-textColor = "#FAFAFA"
-secondaryBackgroundColor = "#262730"
-font = "sans serif"
+base="light"  # ダークテーマなら "dark" に変更
+primaryColor="#004a55"  # メインカラー
+backgroundColor="#fafafa"  # 背景色
+textColor="#222"  # 文字色
+font="sans serif"  # フォント
