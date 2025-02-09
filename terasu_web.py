@@ -64,11 +64,22 @@ st.markdown(f"""
             gap: 30px;
             padding: 20px;
         }}
-                /* ✅ ヘッダーを非表示 */
+
+        /* ✅ ヘッダーを非表示 */
         header[data-testid="stHeader"] {{
             display: none !important;
         }}
-        
+
+        /* ✅ フッター（Made with Streamlit）を非表示 */
+        footer {{
+            visibility: hidden;
+        }}
+
+        /* ✅ 画面下部の余白・固定エリアを削除 */
+        div[style*="position: fixed"] {{
+            display: none !important;
+        }}
+
         /* ✅ フェードインアニメーション */
         @keyframes fadeIn {{
             from {{
