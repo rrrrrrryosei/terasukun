@@ -101,8 +101,8 @@ st.markdown(f"""
 
         /* ✅ ユーザーメッセージ（アニメーション付き & フォント適用） */
         .user-message {{
-            background-color: #c7d8e3;
-            color: #545454;
+            background-color: #5352eb;
+            color: #ffffff;
             max-width: 60%;
             padding: 12px;
             margin: 5px;
@@ -118,7 +118,7 @@ st.markdown(f"""
         /* ✅ てらすくんのメッセージ（アニメーション付き & フォント適用） */
         .bot-message {{
             background-color: #FFFFFF;
-            color: #322e94;
+            color: #5352eb;
             max-width: 60%;
             padding: 12px;
             margin: 5px;
