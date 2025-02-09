@@ -84,29 +84,6 @@ st.markdown(f"""
             display: none !important;
         }}
 
-                /* ✅ ヘッダー（ツールバー含む）を非表示 */
-        header[data-testid="stHeader"] {{
-            display: none !important;
-        }}
-
-        /* ✅ フッター（Made with Streamlit）を非表示 */
-        footer {{
-            visibility: hidden !important;
-            display: none !important;
-        }}
-
-        /* ✅ ツールバー（右上のメニュー）を非表示 */
-        [data-testid="stToolbar"] {{
-            visibility: hidden !important;
-            display: none !important;
-        }}
-
-        /* ✅ メニューアイコン（≡）を非表示 */
-        #MainMenu {{
-            visibility: hidden !important;
-            display: none !important;
-        }}
-
         /* ✅ 画面下部の余白・固定エリアを削除 */
         div[style*="position: fixed"] {{
             display: none !important;
