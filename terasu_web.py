@@ -167,7 +167,7 @@ with st.container():
         user_input = st.text_input(
             "👤 メッセージを入力:",
             key="user_input",
-            value="",  # ✅ `session_state` ではなく `""` をセット
+            value="",
             help="ここに入力して送信",
             label_visibility="collapsed"
         )
@@ -181,9 +181,12 @@ with st.container():
 
 # ✅ 送信ボタンが押されたとき
 if send_button and user_input and not st.session_state.sending:
-    # ✅ 送信中状態に変更
+    # ✅ 送信中状態に変更（UI を更新）
     st.session_state.sending = True
+    st.rerun()  # 🎯 ここでリフレッシュして UI を更新
 
+# ✅ 送信処理（送信ボタンが押されていて、送信中の場合にのみ実行）
+if st.session_state.sending:
     # ✅ ユーザーの発言を履歴に追加
     st.session_state.chat_history.append({"role": "user", "parts": [{"text": user_input}]})
 
