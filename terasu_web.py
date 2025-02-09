@@ -64,6 +64,10 @@ st.markdown(f"""
             gap: 30px;
             padding: 20px;
         }}
+                /* ✅ ヘッダーを非表示 */
+        header[data-testid="stHeader"] {{
+            display: none !important;
+        }}
         
         /* ✅ フェードインアニメーション */
         @keyframes fadeIn {{
