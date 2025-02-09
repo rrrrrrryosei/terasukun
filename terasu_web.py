@@ -119,7 +119,7 @@ st.markdown(f"""
         .bot-message {{
             background-color: #FFFFFF;
             color: #5352eb;
-            max-width: 60%;
+            max-width: 80%;
             padding: 12px;
             margin: 5px;
             border-radius: 20px;
