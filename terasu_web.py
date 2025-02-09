@@ -33,7 +33,7 @@ st.set_page_config(page_title="てらすくん AI チャット", layout="wide")
 # ✅ てらすくんのアイコン・タイトル・説明文を画面上部に表示
 st.markdown(
     f"""
-    <div style='text-align: center; margin-bottom: 10px;'>
+    <div style='text-align: center; margin-bottom: 100px;'>
         <img src="https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-3.png" 
              width="100" style="border-radius: 50%;">
         <h1 style="color: #ffffff; font-size: 24px; margin-top: 10px;">てらすくんチャット</h1>
