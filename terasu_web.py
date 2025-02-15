@@ -31,7 +31,7 @@ system_prompt = {
 }
 
 # ✅ Streamlit UI の設定
-st.set_page_config(page_title="てらすくん AI チャット", layout="wide")
+st.set_page_config(page_title="てらすくんに聞いてみよう", layout="wide")
 
 # ✅ てらすくんのアイコン・タイトル・説明文を画面上部に表示
 st.markdown(
