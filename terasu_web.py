@@ -39,8 +39,8 @@ st.markdown(
     <div style='text-align: center; margin-bottom: 20px;'>
         <img src="https://aobact.com/wp-content/uploads/2025/02/てらすくんAI-5.png" 
              width="100" style="border-radius: 50%;">
-        <h1 style="color: #ffffff; font-size: 24px; margin-top: 10px;">てらすくんチャット</h1>
-        <p style="color: #ffffff; font-size: 12px;">あおばコミュニティ・テラスの「てらすくん」とおしゃべりしてみよう！
+        <h1 style="color: #ffffff; font-size: 24px; margin-top: 10px;">てらすくん相談室</h1>
+        <p style="color: #ffffff; font-size: 12px;">あおばコミュニティ・テラスの「てらすくん」に、困っていることや相談したいことを送ってみよう！
         ※たまに間違えることもあるよ</p>
     </div>
     """,
